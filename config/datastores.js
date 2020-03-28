@@ -12,6 +12,24 @@
  * For more information on configuring datastores, check out:
  * https://sailsjs.com/config/datastores
  */
+module.exports.connections = {
+
+
+  localDiskDb: {
+    adapter: 'sails-disk'
+  },
+
+ mongodb: {
+  adapter: 'sails-mongo',
+  host: 'localhost',
+  port: 27017,
+  // user: 'username', //optional
+  // password: 'password', //optional
+  database: 'demos' //optional
+}
+
+
+};
 
 module.exports.datastores = {
 
@@ -48,8 +66,14 @@ module.exports.datastores = {
     *    (See https://sailsjs.com/config/datastores for help.)                 *
     *                                                                          *
     ***************************************************************************/
-    // adapter: 'sails-mysql',
+    // adapter: 'sails-mongo',
     // url: 'mysql://user:password@host:port/database',
+      adapter: require('mongodb'),
+      host: 'localhost',
+      port: 27017,
+      // user: 'username',
+      // password: 'password',
+      database: 'MongoDBDatabase1'
 
   },
 
