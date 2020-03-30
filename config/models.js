@@ -34,7 +34,7 @@ module.exports.models = {
   * > https://sailsjs.com/docs/concepts/orm/model-settings#?schema           *
   *                                                                          *
   ***************************************************************************/
-     datastore:'mongodb',
+    //  datastore:'mongodb',
   // schema: true,
 
 
