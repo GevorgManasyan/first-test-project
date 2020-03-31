@@ -14,7 +14,7 @@ module.exports = {
     },
     email:{
       type:'string',
-      email:true
+      // email:isEmail
     },
     state:{
       type:'string'
